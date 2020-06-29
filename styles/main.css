@@ -444,9 +444,14 @@ nav.fixed {
 }
 
 
-.works-card .slider .caption .content img:hover{
-    transform: scale(1.1);
+.works-card .slider .caption .content i{
+    font-size: 3em;
 
+}
+
+.works-card .slider .caption .content i:hover {
+    transform: scale(1.1);
+    color: #00E28F;
 }
 
 .slider .indicators .indicator-item.active {
