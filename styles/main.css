@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,400;1,300&family=Sanchez&family=Spartan:wght@300;800&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/**   Fonts 
+
+font-family: 'Spartan', sans-serif;
+font-family: 'Sanchez', serif;
+font-family: 'Monsteratt';
+
+*/
+
+
+/** 
+ Mint Green Pallette 
+ primary #00E28F
+ secondary #A7FBCD
+ tertiary #0b2901
+*/
+
+header{
+    margin:0;
+    padding: 0;
+}
+
+
+header .parallax-container {
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    margin: 0;
+}
+
+nav {
+    position: relative;
+    background-color: transparent;
+}
+
+.nav-wrapper .material-icons {
+    font-size: 40px;
+    color: white;
+    
+}
+
+.nav-wrapper .material-icons:hover{
+    transform: rotateY(160deg);
+    transition: .5s ease-in ;
+}
+
+
+ul {
+    width: 35%;
+}
+
+ul li a {
+    font-size: 1.2em;
+    color:white;
+    font-family: 'Spartan', sans-serif;
+    margin-left: 20px;
+}
+
+ul li a:hover {
+    color: #00E28F;
+    font-weight: bold;
+}
+
+header .my-wrapper {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .my-wrapper h1 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 6em;
+}
+
+header .my-wrapper h2 {
+    font-family: 'Sanchez', serif;
+    text-transform: uppercase;
+    color: #00E28F;
+}
+
+
+
+header .my-wrapper .my-button{
+    padding: 30px;
+    width: 100%;
+
+
+}
+
+header .my-wrapper a {
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid #00E28F;
+    padding: 25px;
+    cursor: pointer;
+    background: rgb(20, 20, 20); /* fallback color for old browsers */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+header .my-wrapper a:hover{
+    background: #fff;
+    color: rgb(24, 24, 24);
+    border: none;
+    transition: .5s ease-in-out;
+}
+
+nav.fixed {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 11;
+    animation: fixHeader 1s ease-in-out;
+
+}
+@keyframes fixHeader {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.fixed-action-btn a .material-icons {
+    color:rgb(15, 15, 15);
+}
+
+.material-tooltip{
+    font-family: 'Spartan', sans-serif;
+    background: #00E28F;
+    color: rgb(24, 24, 24);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    transition: .5s ease-in-out;
+}
+
+/**   About  */
+
+#about {
+    height: 100vh;
+    background-color: #212121;
+    
+}
+
+.about-card {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.about-card .side-title{
+    background-color: #00E28F;
+    writing-mode: vertical-lr;
+    height: 100%;
+    text-align: center;
+}
+
+.about-card .about{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.about-card .side-title span {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 6em;
+}
+
+.about-card .content {
+
+    height: 100%;
+    padding: 25px;
+}
+
+.about-card .image img {
+    width: 180px;
+    filter: grayscale(100%);
+    border: 2px solid #00E28F;
+    margin: auto;
+}
+
+.about-card .image img:hover {
+    filter: grayscale(0);
+}
+
+.about-card .image h3 {
+    color: #00E28F;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    width: auto;
+    font-size: 4em;
+}
+
+.about-card .text .text-content .para {
+    font-size: 1.2em;
+    color:#fff;
+    font-family: 'Spartan', sans-serif;
+    
+}
+
+.about-card .text .text-content {
+    width: 70%;
+    padding: 15px;
+}
+
+.about-card .resume {
+    height: 100%;
+    margin: 20px auto;
+}
+
+.about-card .resume .resume-icon{
+    margin: 50px auto;
+    height: 100px;
+    width: auto;
+}
+
+.about-card .resume .resume-icon:hover {
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+
+}
+
+
+
+/* About-2  */
+
+.about-2{
+    height: 100%;
+    margin: 0;
+    width: 100%;
+   
+}
+
+.about-2 .parallax-container{
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.about-2 .short-text {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 4.2rem;
+   
+}
+
+.about-2 .my-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+
+}
+
+
+/* Skills */
+
+#skills{
+    height: 100vh;
+    background-color: #212121;
+}
+
+.skills-card {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.skills-card .row {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-card .side-title {
+    background-color: #00E28F;
+    writing-mode: vertical-lr;
+    height: 100%;
+    text-align: center;
+}
+
+.skills-card .side-title span {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 6em;
+}
+
+
+
+/* Collections */
+
+
+.skills-card .skills {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-card .card {
+    border: none;
+    height: 50vh;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.skills-card .card:hover {
+    border: 2px solid #A7FBCD;
+    
+}
+
+.skills-card .card .card-title{
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.skills-card .card .card-title:hover{
+    font-weight: 800;
+    transition: .3s ease-in-out;
+   
+}
+
+.skills-card .card .card-image {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.skills-card .card .card-image img {
+    height: 140px;
+}
+
+.skills-card .card .card-reveal ul {
+    width: 100%;
+    padding: 20px;
+    font-family: 'Spartan', sans-serif;
+    
+}
+
+.skills-card .card .card-reveal ul h4 {
+    font-size: 1.5em;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    background-color: #212121;
+    padding: 10px;
+    color: rgb(230, 230, 230);
+}
+
+.skills-card .card .card-reveal ul .collection-item {
+    font-size: 1.2em;
+    color: #000;
+    
+}
+
+.skills-card .card .card-reveal ul .collection-item:hover {
+    background-color: #A7FBCD;
+    font-size: 1.4em;
+}
+
+/* Works */
+
+#works {
+    height: 130vh;
+    background-color: #212121;
+}
+
+.works-card {
+    height: 100%;
+}
+
+.works-card .side-title{
+    background-color: #00E28F;
+    writing-mode: vertical-lr;
+    height: 100%;
+    text-align: center;
+}
+
+.works-card .side-title span {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 6em;
+}
+
+.works-card .row {
+    height: 100%;
+    width: auto;
+} 
+
+.works-card .row .container{
+    height: 100%;
+    display: flex;
+    align-items:center;
+}
+
+.works-card .row .container .slider .indicators{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.works-card .slider .caption .content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #A7FBCD;
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Spartan', sans-serif;
+}
+
+.works-card .slider .caption .content h3 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    color:#00E28F;
+}
+
+.works-card .slider .works-info {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #A7FBCD;
+    border-radius: 5px;
+}
+
+.works-card .slider .caption .content img {
+    height: 50px;
+    width: 50px;
+}
+
+.works .slides {
+    width: 100%;
+}
+
+
+.works-card .slider .caption .content img:hover{
+    transform: scale(1.1);
+
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #00E28F;
+}
+
+/* Contact */
+
+#contact {
+    height: 100vh;
+    background-color: #212121;
+
+}
+
+.contact-card .row {
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.contact-card .side-title{
+    background-color: #00E28F;
+    writing-mode: vertical-lr;
+    height: 100%;
+    text-align: center;
+}
+
+.contact-card .side-title span {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 6em;
+}
+
+.contact-card .row {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contact-card .contact-details {
+    height: 100%;
+    padding: 12px;
+}
+
+.contact-card .contact-details h3 {
+    color: #00E28F;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 4.5em;
+
+}
+
+.contact-card .contact-details span {
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.2em;
+}
+
+.contact-card .contact-details ul{
+    width: 100%;
+}
+
+.contact-card .contact-details ul li {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-card .contact-details a {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 1.6em;
+}
+
+
+footer {
+    background-color: #000;
+    height: 5vh;
+}
+@media only screen and (max-width: 1100px){
+
+    #skills .skills-card {
+        display: block;
+        width: 100%;
+    }
+
+    #skills .skills-card .card {
+        width:90%;
+        margin:30px auto;
+       
+    }
+    #skills .skills-card .card span {
+        font-size: 1.6em;
+        font-weight: 800;
+    }
+
+    .skills-card .card .card-reveal ul h4 {
+        font-size: 1em;
+    }
+
+    .skills-card .card .card-reveal ul li {
+        font-size: 1em;
+    }
+   
+}
+
+@media only screen and (max-width: 769px){
+
+    /* Header */
+
+    header .my-wrapper h1 {
+        font-size: 5em;
+    }
+
+    header .my-wrapper h2{
+        font-size: 2em;
+    }
+
+    header .my-wrapper a{
+        font-size: 1em;
+    }
+
+    /* About */
+
+    #about{
+        height: 100%;
+        margin:0;
+        
+    }
+
+    .about-card {
+        margin: 0;
+        height: 100%;
+        width: auto;    
+    }
+
+    .about-card .row {
+        margin:0;
+    }
+
+
+    .about-card h3 {
+        font-size: 1em;
+    }
+
+    .about-2 .short-text{
+        font-size: 3.3em;
+    }
+
+    .skills-card .skills{
+        display: inline-block;
+       
+    }
+
+
+ 
+
+    /* Skills */
+   
+    #skills{
+        height: auto;
+    }
+
+    #skills .skills-card {
+        padding: 20px;
+    }
+
+    #skills .skills-card .row {
+        margin:0;
+        display: inline;
+    }
+    
+}
+
+
+    /* Works */
+    .works-card .works{
+        display: block;
+    }
+
+
+
